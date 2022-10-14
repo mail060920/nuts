@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+
+}
+body {
+    background-color: rgb(84, 98, 110);
+    font-family: Montserrat;
+    align-items: center;
+}
+.header {
+    background-color: rgb(174, 174, 174);
+    height: 50px;
+}
+
+.main-picture {
+    height: 400px;
+    background-color: rgb(32, 32, 32);
+}
+
+.first-section {
+    height: 400px;
+    background-color: rgb(164, 164, 164);
+}
+
+div {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.first-section-p {
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.div-2 {
+    height: 300px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+form {
+    width: 80%;
+    margin: auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin: auto auto;
+    width: 50%;
+}
