@@ -1,0 +1,5 @@
+USE 
+CREATE TABLE HALO (
+    id INT PRIMARY AUTOINCREMENT,
+    user_name
+)

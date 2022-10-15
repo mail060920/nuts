@@ -1,0 +1,6 @@
+CREATE TABLE Test (
+    name varchar(50) NOT NULL, 
+    created datatime NOT NULL, 
+    gender ENUM("M", "F", "Q") NOT NULL, 
+    id int PRIMARY KEY NOT NULL AUTO_INCREMENT
+    )
