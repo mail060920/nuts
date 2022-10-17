@@ -35,7 +35,7 @@
             movies.push(movie);
             document.forms[0].reset();
 
-            console.wanr('added', {movies});
+            console.wanr('added', {movies} );
             let pre = document.querySelector('#msg pre');
             pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
 
