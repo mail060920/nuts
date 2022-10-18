@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <style>
+        #map {
+            height: 180px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>latitude: </p><span id="lat"></span>
+    <p>longitude: </p><span id="lon"></span>
+    <div id="map"></div>
+    <script>
+        const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
+        async function getData() {
+            const response = await fetch(api_url);
+            const data = await response.json();
+            console.log(data)
+            const { latitude , longitude } = data
+
+            document.getElementById('lat').textContent = latitude
+            document.getElementById('lon').textContent = longitude
+        }
+        getData();
+        var map = L.map('map').setView([51.505, -0.09], 13);
+    </script>
+</body>
+</html>
